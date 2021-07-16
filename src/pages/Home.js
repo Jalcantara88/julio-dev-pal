@@ -1,6 +1,6 @@
 import ProjectGallery from '../components/ProjectGallery';
 import Intro from '../components/Introcomp';
-import {Projects} from '../shared/projects';
+import {Projects} from '../shared/projectsData';
 
 const Home = () => {
     return(

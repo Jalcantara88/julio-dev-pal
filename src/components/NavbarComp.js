@@ -11,8 +11,11 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
+  NavbarText,
+  Button, 
+  ButtonGroup
 } from 'reactstrap';
+import { Link} from 'react-router-dom';
 
 const TopBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,31 +27,40 @@ const TopBar = (props) => {
     <NavbarBrand className="" href="/">Julio Alcantara</NavbarBrand>
     <NavbarToggler onClick={toggle} />
     <Collapse isOpen={isOpen} navbar>
-        <Nav className="mr-auto " navbar>
-        <NavItem>
-            <NavLink href="/components/">About</NavLink>
-        </NavItem>
-        <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
-                Projects
-            </DropdownToggle>
-            <DropdownMenu right>
-                <DropdownItem>
-                    Words Attack
-                </DropdownItem>
-                <DropdownItem>
-                    Run & Gun
-                </DropdownItem>
-                <DropdownItem>
-                    Chatterbox
-                </DropdownItem>
-            </DropdownMenu>
-        </UncontrolledDropdown>
-        <NavItem>
-            <NavLink href="/components/">
-                Contact
-            </NavLink>
-        </NavItem>
+        <Nav className="mr-auto align-items-center" navbar>
+            <NavItem>
+                <NavLink href="/about/">About</NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                    Projects
+                </DropdownToggle>
+                <DropdownMenu right>
+                    <DropdownItem href="project">
+                        Words Attack
+                    </DropdownItem>
+                    <DropdownItem href="project">
+                        Run & Gun
+                    </DropdownItem>
+                    <DropdownItem href="project">
+                        Chatterbox
+                    </DropdownItem>
+                </DropdownMenu>
+            </UncontrolledDropdown>
+            <NavItem>
+                <NavLink href="/contact/">
+                    Contact
+                </NavLink>
+            </NavItem>
+            <NavItem className="socialButtons">
+                <ButtonGroup>
+                    <Button tag={Link} to="https.www.google.com"><i class="socialLink fab fa-github fa-2x"></i></Button>
+                    <Button><i class="socialLink fab fa-linkedin fa-2x"></i></Button>
+                    <Button><i class="socialLink fab fa-behance-square fa-2x"></i></Button>
+                    <Button><i class="socialLink fab fa-youtube fa-2x"></i></Button>
+                </ButtonGroup>
+            </NavItem>
+            
         </Nav>
     </Collapse>
     </Navbar>

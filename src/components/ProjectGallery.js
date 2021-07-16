@@ -26,7 +26,7 @@ const RenderProject = ({project}) => {
                     <CardText>
                         {project.summary}
                     </CardText>
-                    <Button className="projectCard__button">see more</Button>
+                    <Button id="projectCard__button">view project</Button>
 
                 </section>
                 
@@ -46,11 +46,14 @@ const ProjectGallery = ({projects}) => {
     return(
         <main>
             <header className="pageHeader">
-                Projects 
+                <span className="pageTitle">
+                    Projects 
+                </span>
+                <span className="pageSubtitle">
+                    these are a few of my latest projects
+                </span>
             </header>
-            <p>
-                these are a few of my latest projects
-            </p>
+            
             <section className="projectList">
                 {projectList}
 
