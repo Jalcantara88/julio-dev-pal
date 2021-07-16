@@ -28,25 +28,27 @@ const TopBar = (props) => {
         <NavItem>
             <NavLink href="/components/">About</NavLink>
         </NavItem>
-        <NavItem>
-            <NavLink href="https://github.com/Jalcantara88">GitHub</NavLink>
-        </NavItem>
         <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
-            Projects
+                Projects
             </DropdownToggle>
             <DropdownMenu right>
-            <DropdownItem>
-                Words Attack
-            </DropdownItem>
-            <DropdownItem>
-                Run & Gun
-            </DropdownItem>
-            <DropdownItem>
-                Chatterbox
-            </DropdownItem>
+                <DropdownItem>
+                    Words Attack
+                </DropdownItem>
+                <DropdownItem>
+                    Run & Gun
+                </DropdownItem>
+                <DropdownItem>
+                    Chatterbox
+                </DropdownItem>
             </DropdownMenu>
         </UncontrolledDropdown>
+        <NavItem>
+            <NavLink href="/components/">
+                Contact
+            </NavLink>
+        </NavItem>
         </Nav>
     </Collapse>
     </Navbar>

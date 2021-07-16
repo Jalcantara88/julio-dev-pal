@@ -16,9 +16,9 @@ const Footer = () => {
             <section className="footerBox">
                 <ul className="footerList">
                     <li><a href="#test">about</a></li>
+                    <li><a href="#test">github</a></li>
                     <li><a href="#test">projects</a></li>
-                    <li><a href="#test">videos</a></li>
-                    <li><a href="#test">home</a></li>
+                    <li><a href="#test">contact</a></li>
                 </ul>
 
             </section>
