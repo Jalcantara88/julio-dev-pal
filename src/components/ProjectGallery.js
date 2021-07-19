@@ -13,12 +13,12 @@ const RenderProject = ({project}) => {
     return(
         <Card className="projectCard">
             
-            <CardBody className="projectCard__body">
+            <CardBody id="projectCard__body">
                 
-                <CardImg left width="100%" src={project.thumbImg} alt={project.imgAlt}/>
+                <CardImg left className="projectCard__image img-fluid" width="100%" src={project.thumbImg} alt={project.imgAlt}/>
                 <section>
-                    <CardTitle tag="h2">
-                        {project.name}
+                    <CardTitle className="projectTitle">
+                        <img className="projectTitle__image" src={project.titleImg} alt="project alt"/>
                     </CardTitle>
                     <CardSubtitle tag="h5" className="text-muted">
                     {project.subtitle}

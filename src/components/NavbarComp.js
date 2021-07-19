@@ -52,14 +52,16 @@ const TopBar = (props) => {
                     Contact
                 </NavLink>
             </NavItem>
+            {/*}
             <NavItem className="socialButtons">
-                <ButtonGroup>
+                <ButtonGroup className="mx-auto">
                     <Button tag={Link} to="https.www.google.com"><i class="socialLink fab fa-github fa-2x"></i></Button>
                     <Button><i class="socialLink fab fa-linkedin fa-2x"></i></Button>
                     <Button><i class="socialLink fab fa-behance-square fa-2x"></i></Button>
                     <Button><i class="socialLink fab fa-youtube fa-2x"></i></Button>
                 </ButtonGroup>
             </NavItem>
+  */}
             
         </Nav>
     </Collapse>

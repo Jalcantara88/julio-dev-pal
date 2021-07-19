@@ -1,4 +1,5 @@
-const About = () => {
+
+const About = ({project}) => {
     return(
         <>
             about page

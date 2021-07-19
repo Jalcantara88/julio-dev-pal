@@ -5,6 +5,7 @@ export const Projects = [
         subtitle: "word jumble space shooter",
         summary: "Words Attack is a words jumble puzzle game mixed with elements of space shooters. 100 levels of fun.",
         thumbImg: "gamePlay.gif",
+        titleImg: "projects/wordsAttackTitle.png",
         fullImg: "",
         imgAlt: "Words Attack Gameplay",
         pageContent: {
@@ -18,6 +19,7 @@ export const Projects = [
         subtitle: "adventure platformer infinite runner",
         summary: "Run & Gun is a high energy endless runner platformer. Jump and shoot your way though the endless as long as you can.",
         thumbImg: "gameplay.gif",
+        titleImg: "wordsAttackTitle.png",
         fullImg: "",
         imgAlt: "Run & Gun Gameplay",
         pageContent: {
@@ -31,6 +33,7 @@ export const Projects = [
         subtitle: "Chattroom app using WebSocket",
         summary: "Chatterbox is a browser based online chat app. It allows you to have public or private chats with other signed in users.",
         thumbImg: "gameplay.gif",
+        titleImg: "wordsAttackTitle.png",
         fullImg: "",
         imgAlt: "",
         pageContent: {

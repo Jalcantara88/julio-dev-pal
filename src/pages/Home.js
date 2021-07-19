@@ -4,7 +4,7 @@ import {Projects} from '../shared/projectsData';
 
 const Home = () => {
     return(
-        <div class="content">
+        <div className="content">
             <Intro/>
             <ProjectGallery projects={Projects}/>
         </div>

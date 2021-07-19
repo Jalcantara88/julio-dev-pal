@@ -1,12 +1,12 @@
 const Footer = () => {
     return(
-        <footer class="siteFooter">
+        <footer class="siteFooter mt-5">
             <section className="footerBox">
                 <ul className="footerList">
-                    <li><a href="#test"><i/>github</a></li>
-                    <li><a href="#test"><i/>linkedin</a></li>
-                    <li><a href="#test"><i/>behance</a></li>
-                    <li><a href="#test"><i/>youtube</a></li>
+                    <li><a href="#test"><i class="socialLink fab fa-github fa-lg "/> github</a></li>
+                    <li><a href="#test"><i class="socialLink fab fa-linkedin fa-lg"/> linkedin</a></li>
+                    <li><a href="#test"><i class="socialLink fab fa-behance fa-lg"/> behance</a></li>
+                    <li><a href="#test"><i class="socialLink fab fa-youtube fa-lg"/> youtube</a></li>
                 </ul>
             </section>
             <section className="footerBox">
@@ -14,11 +14,11 @@ const Footer = () => {
                 <p>copyright © 2021</p>
             </section>
             <section className="footerBox">
-                <ul className="footerList">
-                    <li><a href="#test">about</a></li>
-                    <li><a href="#test">github</a></li>
-                    <li><a href="#test">projects</a></li>
-                    <li><a href="#test">contact</a></li>
+                <ul className="footerList" id="right-text">
+                    <li><a href="#test">home <i class="fas fa-home"></i></a></li>
+                    <li><a href="#test">about <i class="fas fa-address-card"></i></a></li>
+                    <li><a href="#test">projects <i class="fas fa-address-card"></i></a></li>
+                    <li><a href="#test">contact <i class="fas fa-envelope-open-text"></i></a></li>
                 </ul>
 
             </section>
