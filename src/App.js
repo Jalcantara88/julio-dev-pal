@@ -12,14 +12,17 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import {useState} from 'react';
 
 
 
 function App() {
+  const [selectedProject, setSelectedProject] = useState({});
+
   return (
     <Router>
       <div className="App">
-        <TopBar/>
+        <TopBar setProject={setSelectedProject}/>
         <Switch>
           <Route exact path="/">
             <Home/>
@@ -28,7 +31,7 @@ function App() {
             <About/>
           </Route>
           <Route path="/project">
-            <Project/>
+            <Project project={selectedProject}/>
           </Route>
           <Route path="/contact">
             <Contact/>

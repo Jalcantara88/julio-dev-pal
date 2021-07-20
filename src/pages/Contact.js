@@ -1,7 +1,14 @@
+import PageHeader from "../components/PageHeaderComp";
+import ContactForm from "../components/contactFormComp";
+
 const Contact = () => {
     return(
         <>
-            contact page
+            <PageHeader
+                title='Contact'
+                subtitle="Feel free to reach out to me"
+            />
+            <ContactForm/>
         </>
     )
 }

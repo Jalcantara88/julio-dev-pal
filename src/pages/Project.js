@@ -1,7 +1,12 @@
-const Project = () => {
+import PageHeader from "../components/PageHeaderComp"
+
+const Project = ({project}) => {
     return(
         <>
-            project page
+            <PageHeader
+                title={project.name}
+                subtitle={project.subtitle}
+            />
         </>
     )
 }

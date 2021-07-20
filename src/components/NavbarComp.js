@@ -16,8 +16,9 @@ import {
   ButtonGroup
 } from 'reactstrap';
 import { Link} from 'react-router-dom';
+import {Projects} from '../shared/projectsData'
 
-const TopBar = (props) => {
+const TopBar = ({setProject}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -36,13 +37,19 @@ const TopBar = (props) => {
                     Projects
                 </DropdownToggle>
                 <DropdownMenu right>
-                    <DropdownItem href="project">
+                    <DropdownItem tag={Link} to="project" onClick={() => {
+                        setProject(Projects[0]);
+                    }}>
                         Words Attack
                     </DropdownItem>
-                    <DropdownItem href="project">
+                    <DropdownItem tag={Link} to="project"onClick={() => {
+                        setProject(Projects[1]);
+                    }}>
                         Run & Gun
                     </DropdownItem>
-                    <DropdownItem href="project">
+                    <DropdownItem tag={Link} to="project"onClick={() => {
+                        setProject(Projects[2]);
+                    }}>
                         Chatterbox
                     </DropdownItem>
                 </DropdownMenu>

@@ -3,11 +3,11 @@ import {
     CardImg, 
     CardText, 
     CardBody,
-    CardHeader,
     CardSubtitle, 
     CardTitle, 
     Button
 }from 'reactstrap';
+import PageHeader from './PageHeaderComp';
 
 const RenderProject = ({project}) => {
     return(
@@ -45,14 +45,10 @@ const ProjectGallery = ({projects}) => {
 
     return(
         <main>
-            <header className="pageHeader">
-                <span className="pageTitle">
-                    Projects 
-                </span>
-                <span className="pageSubtitle">
-                    these are a few of my latest projects
-                </span>
-            </header>
+            <PageHeader
+                title="Projects"
+                subtitle="these are a few of my latest projects"
+            />
             
             <section className="projectList">
                 {projectList}

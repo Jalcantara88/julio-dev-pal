@@ -13,9 +13,33 @@ export const Profile = {
         "javascript",
         "bootstrap",
     ],
-    mainSkills: [
-        "React",
-        "Bootstrap",
-        "JQuery",
+    experience: [
+        {
+            id: 0,
+            company: "",
+            role: "",
+            details: "",
+            year: 2020,
+            skillsLearned: [
+                "0",
+                "1",
+                "2"
+            ]
+        }
+    ],
+    education: [
+        {
+            id: 0,
+            school: "",
+            title: "",
+            year: 2020,
+            details: "",
+            skillsLearned: [
+                "0",
+                "1",
+                "2"
+            ]
+        }
     ]
+
 }

@@ -116,7 +116,7 @@ html {
 .pageHeader {
   display: flex;
   flex-direction: row;
-
+  margin-top: 40px;
 }
 
 .socialButtons {
@@ -147,6 +147,13 @@ html {
 #contactBtn {
   border: none;
   background-color: orange;
+  color:rgb(22, 45, 68);
+  font-weight: bold;
+}
+
+#contactBtn:hover {
+  background-color: dodgerblue;
+  color: white;
 }
 
 .profileName {
@@ -218,3 +225,96 @@ html {
   border-bottom-right-radius: 10px;
   box-shadow: 2px 2px 3px grey;
 }
+
+.contactHolder {
+  
+}
+
+.contactForm {
+  background-color: dodgerblue;
+  max-width: 900px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 20px auto;
+}
+
+.contactForm Label {
+  color: white;
+  background-color: rgb(49, 52, 82);
+  width: 100px; 
+  
+  padding: 5px 0;
+  margin-top: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#yellowBtn {
+  background-color: orange;
+  color:rgb(22, 45, 68);
+  border: none;
+  margin: 10px 0 0 0;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: large;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.resumeHeader {
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.resumeArticle {
+  width: 100%;
+  flex-grow: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.resumeArticle span {
+  flex: 3;
+  flex-grow: 3;
+}
+
+.resumeIcon {
+  flex: 1;
+  flex-grow: 1;
+padding: 10px 0;
+  background-color: #282c34;
+  color: dodgerblue;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+.resumeTitle {
+  flex-grow: 4;
+  flex: 4 ;
+  padding: 0;
+  align-self: center;
+}
+
+.resumeCard {
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px;
+}
+

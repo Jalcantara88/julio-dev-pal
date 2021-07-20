@@ -5,7 +5,7 @@ import {Projects} from '../shared/projectsData';
 const Home = () => {
     return(
         <div className="content">
-            <Intro/>
+            <Intro fullSocial={false} showSkills={true} showContact={true}/>
             <ProjectGallery projects={Projects}/>
         </div>
     )
